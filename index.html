@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <!--<title>Registration Form in HTML CSS</title>-->
+     <!---Custom CSS File--->
+     <style>
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+          * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: "Poppins", sans-serif;
+          }
+          body{
+               background-color: black;
+          }
+          #bgimg {
+               background-image: url(DBC.png);
+               
+               height: 100px;
+               background-position: center;
+               background-repeat: no-repeat;
+               object-fit: contain;
+               filter: grayscale(100%);
+               z-index: 11;
+               padding: 50px;
+          }
+          .bgcontainer{
+               position: relative;
+               margin: 0 auto;
+               width: 70%;
+               
+               background-color: rgb(255, 255, 255);
+               margin-top: 5%;
+               border-radius: 10px;
+          }
+          .body {
+               min-height: 100vh;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               padding: 20px;
+               background: rgb(0, 0, 0);
+          }
+
+          .container {
+               position: relative;
+               max-width: 700px;
+               width: 100%;
+               background: #fff;
+               padding: 25px;
+               border-radius: 8px;
+               box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .container header {
+               font-size: 1.5rem;
+               color: #333;
+               font-weight: 500;
+               text-align: center;
+          }
+
+          .container .form {
+               margin-top: 30px;
+          }
+
+          .form .input-box {
+               width: 100%;
+               margin-top: 20px;
+          }
+
+          .input-box label {
+               color: #333;
+          }
+
+          .form :where(.input-box input, .select-box) {
+               position: relative;
+               height: 50px;
+               width: 100%;
+               outline: none;
+               font-size: 1rem;
+               color: #707070;
+               margin-top: 8px;
+               border: 1px solid #ddd;
+               border-radius: 6px;
+               padding: 0 15px;
+          }
+
+          .input-box input:focus {
+               box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+          }
+
+          .form .column {
+               display: flex;
+               column-gap: 15px;
+          }
+
+          .form .gender-box {
+               margin-top: 20px;
+          }
+
+          .gender-box h3 {
+               color: #333;
+               font-size: 1rem;
+               font-weight: 400;
+               margin-bottom: 8px;
+          }
+
+          .form :where(.gender-option, .gender) {
+               display: flex;
+               align-items: center;
+               column-gap: 50px;
+               flex-wrap: wrap;
+          }
+
+          .form .gender {
+               column-gap: 5px;
+          }
+
+          .gender input {
+               accent-color: rgb(0, 0, 0);
+          }
+
+          .form :where(.gender input, .gender label) {
+               cursor: pointer;
+          }
+
+          .gender label {
+               color: #707070;
+          }
+
+          .address :where(input, .select-box) {
+               margin-top: 15px;
+          }
+
+          .select-box select {
+               height: 100%;
+               width: 100%;
+               outline: none;
+               border: none;
+               color: #707070;
+               font-size: 1rem;
+          }
+
+          .form button {
+               height: 55px;
+               width: 100%;
+               color: #fff;
+               font-size: 1rem;
+               font-weight: 400;
+               margin-top: 30px;
+               border: none;
+               cursor: pointer;
+               transition: all 0.2s ease;
+               background: rgb(0, 0, 0);
+          }
+
+          .form button:hover {
+               background: rgb(0, 0, 0);
+          }
+
+          #file {
+               position: relative;
+               padding-top: 10px;
+               border-radius: 6px;
+               background-color: white;
+               font-family: poppins;
+               gap: 50px;
+          }
+
+          #file::-webkit-file-upload-button {
+               background-color: black;
+               color: white;
+               border-radius: 5px;
+               border: none;
+               padding: 5px;
+               box-shadow: 0 0 10px black;
+          }
+          
+          /*Responsive*/
+          @media screen and (max-width: 500px) {
+               .form .column {
+                    flex-wrap: wrap;
+               }
+
+               .form :where(.gender-option, .gender) {
+                    row-gap: 15px;
+               }
+          }
+          ::-webkit-scrollbar{
+               display: none;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="bgcontainer">
+          <div id="bgimg"></div>
+     </div>
+     <div class="body">
+          <section class="container">
+
+               <header>Registration Form</header>
+               <form method="POST" action="https://formsubmit.co/yuvarajacb7@gmail.com" enctype="multipart/form-data"
+                    class="form">
+                    <div class="input-box">
+                         <label>Enter your Full Name</label>
+                         <input type="text" name="full Name" placeholder="Enter email address" required />
+                    </div>
+                    <div class="input-box">
+                         <label>Email Address</label>
+                         <input type="text" name="email" placeholder="Enter email address" required />
+                    </div>
+                    <div class="input-box">
+                         <label>College Name</label>
+                         <input type="text" name="college name" placeholder="Enter your College Name" required />
+                    </div>
+                    <div class="input-box">
+                         <label>Department</label>
+                         <input type="text" name="Department" placeholder="Enter your Department" required />
+                    </div>
+                    <div class="input-box">
+                         <label>No of Teams</label>
+                         <div class="column">
+                              <div class="select-box">
+                                   <select name="no of Team">
+                                        <option selected hidden>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                   </select>
+                              </div>
+
+                         </div>
+                    </div>
+
+                    <div class="input-box">
+                         <label for="">No of participant</label>
+                         <input type="number" name="No of participant" placeholder="No. of participant" required />
+                    </div>
+                    <div class="input-box">
+                         <label>Choose your file:</label>
+                         <input type="file" id="file" name="attachment" placeholder="choose your file"
+                              style="margin-top: 10px;">
+                    </div>
+                    <div class="input-box">
+                         <label>Phone Number</label>
+                         <input type="number" name="phone" placeholder="Enter phone number" required />
+                    </div>
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_cc" value="yuvarajacb2005@gmai.com">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+
+
+
+                    <button>Submit</button>
+               </form>
+          </section>
+     </div>
+</body>
+
+</html>

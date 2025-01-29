@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          body {
+               font-size: clamp(0.625rem, 1.119vw - 0.092rem, 1.25rem);
+               background-color: black;
+               color: white;
+          }
+
+          .container {
+               display: inline-block;
+          }
+
+          h1 {
+               position: relative;
+               margin-top: 30%;
+               margin-left: 30%;
+               border-right: 2px solid;
+               letter-spacing: 8px;
+               font-family: monospace;
+               overflow: hidden;
+               white-space: nowrap;
+               width: 100%;
+               animation: typing 3s steps(35),
+                    blink .4s step-end infinite alternate;
+          }
+
+          a {
+               position: relative;
+               display: block;
+               text-decoration: none;
+               color: inherit;
+               font-family: monospace;
+               text-align: center;
+          }
+         
+
+          @keyframes typing {
+               from {
+                    width: 0;
+               }
+          }
+
+          @keyframes blink {
+               50% {
+                    border-color: transparent;
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <h1>Thank you for your Registration...</h1>
+
+     </div>
+     <a href="regi.html">click to register again</a>
+
+</body>
+
+</html>
