@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-
+<!---Coding By CodingLab | www.codinglabweb.com--->
 <html lang="en">
 
 <head>
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-     
+     <!--<title>Registration Form in HTML CSS</title>-->
+     <!---Custom CSS File--->
      <style>
           @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -16,29 +17,35 @@
                box-sizing: border-box;
                font-family: "Poppins", sans-serif;
           }
-          body{
+
+          body {
                background-color: black;
           }
+
           #bgimg {
                background-image: url(DBC.png);
-               
+
                height: 100px;
                background-position: center;
                background-repeat: no-repeat;
-               object-fit: contain;
+               background-size: contain;
+
+
                filter: grayscale(100%);
                z-index: 11;
                padding: 50px;
           }
-          .bgcontainer{
+
+          .bgcontainer {
                position: relative;
                margin: 0 auto;
                width: 70%;
-               
+
                background-color: rgb(255, 255, 255);
                margin-top: 5%;
                border-radius: 10px;
           }
+
           .body {
                min-height: 100vh;
                display: flex;
@@ -181,15 +188,20 @@
                padding: 5px;
                box-shadow: 0 0 10px black;
           }
-          
-          @media screen and (max-width: 500px) {
+
+          /*Responsive*/
+          @media screen and (max-width: 600px) {
                .form .column {
                     flex-wrap: wrap;
                }
 
-               
+               .form :where(.gender-option, .gender) {
+                    row-gap: 15px;
+               }
+
           }
-          ::-webkit-scrollbar{
+
+          ::-webkit-scrollbar {
                display: none;
           }
      </style>
@@ -203,7 +215,7 @@
           <section class="container">
 
                <header>Registration Form</header>
-               <form method="POST" action="https://formsubmit.co/e7d5d48870773d19865868a7fe0a3610" enctype="multipart/form-data"
+               <form method="POST" action="https://formsubmit.co/yuvarajacb7@gmail.com" enctype="multipart/form-data"
                     class="form">
                     <div class="input-box">
                          <label>Enter your Full Name</label>
@@ -243,8 +255,7 @@
                     </div>
                     <div class="input-box">
                          <label>Choose your file:</label>
-                         <input type="file" id="file" name="attachment" placeholder="choose your file"
-                              style="margin-top: 10px;">
+                         <input type="file" id="file" name="attachment" placeholder="choose your file">
                     </div>
                     <div class="input-box">
                          <label>Phone Number</label>
